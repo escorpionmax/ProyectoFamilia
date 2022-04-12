@@ -8,5 +8,5 @@ from .models import Miembro
 def Persona(request, nombre, edad, relacion, mail):
     miembro = Miembro(nombre, edad, relacion, mail)
 
-    return HttpResponse(f'Se agregó a {Persona.nombre} como {Persona.relacion}')
+    return HttpResponse(f'Se agregó a {miembro.nombre} como {miembro.relacion}')
 
